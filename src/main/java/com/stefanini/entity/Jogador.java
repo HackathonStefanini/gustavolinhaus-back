@@ -5,11 +5,12 @@ import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.List;
 
-@Table(schema = "tb_jogador")
+@Entity
+@Table(name = "tb_jogador")
 public class Jogador {
 
     @Id
-    @Column(name = "id_jogador")
+    @Column(name = "id")
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
